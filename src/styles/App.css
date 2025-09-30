@@ -10,3 +10,36 @@ button{
     justify-content: center;
     align-items: center;
 }
+
+/* Parent container */
+.container {
+  display: flex;           /* Split horizontally */
+  height: 100vh;           /* Full height of the screen */
+}
+
+/* Left side: editor */
+.editor {
+  flex: 1;                 /* Take 50% width */
+  padding: 10px;
+  border-right: 2px solid #ccc;
+}
+
+.editor textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;            /* Prevent dragging */
+  font-size: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #27aedb;
+}
+
+/* Right side: preview */
+.preview {
+  flex: 1;                 /* Take 50% width */
+  padding: 10px;
+  background: cyan;
+  overflow-y: auto;         /* Scroll if content overflows */
+  font-size: 16px;
+  white-space: pre-wrap;    /* Keep line breaks */
+}
