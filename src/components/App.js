@@ -5,7 +5,7 @@ import './../styles/App.css';
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
         <Markdown/>
     </div>
   )
